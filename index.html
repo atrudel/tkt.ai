@@ -8,6 +8,8 @@
         <title>TKT.ai</title>
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="assets/favicon.png" />
+        <!-- logo -->
+        <link rel="preload" as="image" href="assets/img/logo-TKT-horiz-blanc.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -20,7 +22,13 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo-TKT-horiz-blanc.png" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top">
+                    <img src="assets/img/logo-TKT-horiz-blanc.png"
+                         alt="TKT.ai"
+                         decoding="async"
+                         fetchpriority="high"
+                    />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -40,7 +48,7 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">L'approche intuitive pour comprendre l'IA</div>
-                <div class="masthead-heading text-uppercase">Formation pro</div>
+                <div class="masthead-heading text-uppercase">Formations</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#approche">Découvrir</a>
             </div>
         </header>
@@ -51,7 +59,7 @@
                     <div class="col-lg-8">
                         <h2 class="section-heading text-uppercase text-center">Notre approche</h2>
 <!--                        <h3 class="section-subheading text-muted text-start">-->
-                            <p>
+                        <p>
                             L'intelligence artificielle est une révolution qui bouleverse tous les secteurs du travail.
                             Beaucoup se sentent démuni(e)s face à cette technologie complexe et en rapide évolution.
                             <br><br>
@@ -66,8 +74,7 @@
                     </div>
                     <div class="col-lg-4 text-center">
                         <img class="img-fluid" src="assets/img/approche.jpg" alt="Illustration de l'approche TKT" />
-                </div>
-
+                    </div>
 <!--                <div class="row text-center">-->
 <!--                    <div class="col-md-4">-->
 <!--                        <span class="fa-stack fa-4x">-->
@@ -93,7 +100,7 @@
 <!--                        <h4 class="my-3">Web Security</h4>-->
 <!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
 <!--                    </div>-->
-<!--                </div>-->
+                </div>
             </div>
         </section>
         <!-- Portfolio Grid-->
@@ -278,8 +285,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Diplômé de l'École Normale Supérieure Paris-Saclay en intelligence artificielle et doctorant à l'École Normale Supérieure en sciences cognitives,
-                    Amric Trudel s'intéresse aux façons avec lesquelles nous pouvons utilier l'IA pour réinventer notre univers cognitif au travail.</p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">
+                        Amric Trudel est diplômé de l’École Normale Supérieure Paris-Saclay en intelligence artificielle et doctorant en sciences cognitives à l’École Normale Supérieure. Fort d’une expérience riche en enseignement tant à l’université qu’en formation professionnelle, il explore, au sein de TKT, comment l’intelligence artificielle peut réinventer nos façons de penser et d’agir au travail, en créant des environnements plus intelligents, productifs et humains.
+                    </p></div>
                 </div>
             </div>
         </section>
@@ -414,7 +422,7 @@
                                         L'atelier se termine avec une <strong>réflexion éthique</strong> sur les <strong>biais</strong> qui peuvent émerger
                                         d'un jeu de données non représentatif, et engendrer des prédictions non désirées.
                                     </p>
-                                    <h6 class="text-center"> Concepts appris</h6>
+                                    <h6 class="text-center"> Notions abordées </h6>
                                     <div class="d-flex justify-content-center">
                                         <ul class="two-column-list">
                                             <li><strong>modèle</strong></li>
@@ -436,14 +444,27 @@
                                         10 à 30 participant(e)s
                                         </li>
                                         <li>
-                                            <strong>Niveau :</strong>
-                                            Tous niveaux
+                                            <strong>Public :</strong>
+                                            Tout public
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Fermer
-                                    </button>
+                                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                                        <a
+                                                class="btn btn-primary btn-xl text-uppercase"
+                                                href="mailto:contact@tkt.ai?subject=Demande%20de%20formation%20%E2%80%93%20Machine%20Learning&body=Bonjour%2C%0A%0AJe%20souhaiterais%20en%20savoir%20plus%20sur%20la%20formation%20%22Machine%20Learning%22.%0A%5Bvos%20besoins%5D%0A%0AMerci%2C%0A%0A%5BNom%5D%0A%5BOrganisation%5D%0A%5BT%C3%A9l%C3%A9phone%5D"
+                                        >
+                                            Demander cette formation
+                                        </a>
+
+                                        <button
+                                                class="btn btn-outline-primary btn-xl text-uppercase"
+                                                data-bs-dismiss="modal"
+                                                type="button"
+                                        >
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Fermer
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -464,24 +485,41 @@
                                     <h2 class="text-uppercase">L'IA générative</h2>
                                     <p class="item-intro text-muted">Comprendre la technologie</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ia_generative.webp" alt="..." />
-                                    <p>L’intelligence artificielle générative révolutionne les métiers en automatisant la création de contenus,
-                                        en optimisant les processus et en ouvrant de nouvelles perspectives d’innovation.
-                                        Cette formation permet aux professionnels de comprendre les fondements de l’IA générative,
-                                        d’expérimenter ses applications concrètes et d’identifier ses opportunités pour leur activité.</p>
+                                    <p>L’intelligence artificielle générative révolutionne les métiers : elle automatise la création de contenus,
+                                        optimise les processus et ouvre des perspectives inédites d’innovation.
+                                        Cette formation permet aux professionnels d'acquérir une compréhension claire des fondements de l’IA générative,
+                                        d'en saisir les enjeux, d’expérimenter ses applications pratiques et d’identifier des usages concrets pour leur propre activité.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Durée:</strong>
+                                            <strong>Durée :</strong>
                                             1/2 à 1 journée
                                         </li>
                                         <li>
-                                            <strong>Niveau:</strong>
-                                            Débutant
+                                            <strong>Capacité :</strong>
+                                            jusqu'à 40 participant(e)s
+                                        </li>
+                                        <li>
+                                            <strong>Public :</strong>
+                                            Tout public
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Fermer
-                                    </button>
+                                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                                        <a
+                                                class="btn btn-primary btn-xl text-uppercase"
+                                                href="mailto:contact@tkt.ai?subject=Demande%20de%20formation%20%E2%80%93%20L%27IA%20g%C3%A9n%C3%A9rative&body=Bonjour%2C%0A%0AJe%20souhaiterais%20en%20savoir%20plus%20sur%20la%20formation%20%22L%27IA%20g%C3%A9n%C3%A9rative%22.%0A%5Bvos%20besoins%5D%0A%0AMerci%2C%0A%0A%5BNom%5D%0A%5BOrganisation%5D%0A%5BT%C3%A9l%C3%A9phone%5D"
+                                        >
+                                            Demander cette formation
+                                        </a>
+
+                                        <button
+                                                class="btn btn-outline-primary btn-xl text-uppercase"
+                                                data-bs-dismiss="modal"
+                                                type="button"
+                                        >
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Fermer
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -502,24 +540,48 @@
                                     <h2 class="text-uppercase">Atelier cas d'usage</h2>
                                     <p class="item-intro text-muted">Réinventer son activité</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/brainstorming.jpg" alt="..." />
-                                    <p>Cet atelier sur mesure vous permettra de réfléchir à la manière dont vous pouvez réinventer votre activité à l'aide de l'IA.</p>
-                                    <p>Nous partons de vos besoins, et à l'aide d'outils d'idéation puissants, vous êtes amené(e) à vous poser
-                                        les bonnes questions et à établir un plan concret de comment vous servir de l'IA comme levier dans votre entreprise
-                                        pour décupler votre productivité tout en donnant du sens à votre travail.</p>
+                                    <p>Cet atelier sur mesure vous accompagne pour réinventer votre activité grâce à l'IA.</p>
+                                    <p class="mb-2">En partant de vos besoins spécifiques, nous utilisons des outils d'idéation performants
+                                        pour vous guider dans une réflexion stratégique. Vous apprendrez à vous poser
+                                        les bonnes questions, à établir un plan concret et à utiliser l'IA pour :
+                                    </p>
+                                    <ul class="text-start mt-0">
+                                        <li>Augmenter votre productivité</li>
+                                        <li>Donner plus de sens à votre travail</li>
+                                        <li>Transformer vos processus avec des solutions adaptées à votre entreprise</li>
+                                    </ul>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Durée:</strong>
+                                            <strong>Durée :</strong>
                                             1 jour
                                         </li>
                                         <li>
-                                            <strong>Niveau:</strong>
-                                            Tous niveaux
+                                            <strong>Capacité :</strong>
+                                            10 à 40 participant(e)s
+                                        </li>
+                                        <li>
+                                            <strong>Public : </strong>
+                                            Professionnels (tous secteurs)
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Fermer
-                                    </button>
+                                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                                        <a
+                                                class="btn btn-primary btn-xl text-uppercase"
+                                                href="mailto:contact@tkt.ai?subject=Demande%20de%20formation%20%E2%80%93%20Atelier%20cas%20d%27usage&body=Bonjour%2C%0A%0AJe%20souhaiterais%20en%20savoir%20plus%20sur%20la%20formation%20%22Atelier%20cas%20d%27usage%22.%0A%5Bvos%20besoins%5D%0A%0AMerci%2C%0A%0A%5BNom%5D%0A%5BOrganisation%5D%0A%5BT%C3%A9l%C3%A9phone%5D"
+                                        >
+                                            Demander cette formation
+                                        </a>
+
+                                        <button
+                                                class="btn btn-outline-primary btn-xl text-uppercase"
+                                                data-bs-dismiss="modal"
+                                                type="button"
+                                        >
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Fermer
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

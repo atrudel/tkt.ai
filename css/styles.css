@@ -77,6 +77,10 @@
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
+  --brand-blue: #073c93;
+  --brand-pink: #e56768;
+  --brand-yellow: #f5dd0f;
+  --brand-cyan: #70d6e0;
 }
 
 *,
@@ -10859,6 +10863,7 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 2rem;
+  color: var(--brand-blue);
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -10893,7 +10898,8 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #042969;
+  /*background-color: #212529;*/
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10935,7 +10941,8 @@ p {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem;
+    /*height: 2rem;*/
+    height: 4rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
@@ -10949,7 +10956,7 @@ p {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 2.5rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
