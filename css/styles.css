@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ffc800;
-  --bs-link-hover-color: #cca000;
+  --bs-link-color: #e56768;
+  --bs-link-hover-color: #f69c9e;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
   --brand-blue: #073c93;
@@ -11279,7 +11279,7 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #042969;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
